@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background: linear-gradient(to right, #6412bc 0%, #2575fc 100%); */
+    background-color: rgb(195, 8, 228);
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+div {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+#city {
+    padding: 12px 18px;
+    border-radius: 25px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+#btn {
+    padding: 12px 25px;
+    background-color: #00f2ff;
+    color: rgb(45, 3, 3);
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+main {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 213, 5, 0.2);
+}
+
+#m1 {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+section {
+    flex: 1;
+    text-align: center;
+}
+
+h3 {
+    color: rgb(236, 236, 4);
+    margin-top: 0;
+    margin-bottom: 15px;
+    /* border-bottom: 2px solid rgba(255, 255, 255, 0.3); */
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 8px ;
+    line-height: 2.5;
+}
+
+
+  </style>
+
+</head>
+<body>
+
+  <div>
+    <input type="text" id="city">
+    <button onclick="fetchdata()" id="btn">Search</button>
+  </div>
+
+  <main id="m1">
+    <section id="ms1">
+
+    </section>
+
+    <section id="ms2">
+
+    </section>
+  </main>
+
+  <main id="m2">
+
+  </main>
+
+
+  <main id="m3">
+
+  </main>
+  
+
+
+
+  <script src="Weather.js"></script>
+</body>
+</html>
